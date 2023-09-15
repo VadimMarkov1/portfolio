@@ -58,11 +58,24 @@
   text-decoration: none;
   cursor: pointer;
   color: #666666;
-  }
+}
+
+.header__burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .home {
   width: 100%;
   margin-top: 220px;
+}
+
+.header__burger-menu-line {
+  height: 2px;
+  background-color: #666666;
+  margin-bottom: 2px;
+  width: 20px;
 }
 
 .home__wrapper {
@@ -91,6 +104,7 @@
   height: 349px;
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 
 .home__greeting-line {
@@ -326,7 +340,7 @@
     display: none;
   }
   .header__nav ul {
-    width: auto;
+    width: 100%;
     gap: 30px;
   }
   .header__logo-image {
@@ -357,9 +371,78 @@
   .home__greeting {
     margin-bottom: 30px;
   }
+  .about {
+    margin-top: 400px;
+  }
+  .home__greeting {
+    height: 100%;
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+    align-self: center;
+  }
+  .about__me__description {
+    width: 100%;
+  }
+  .about__experience__item, .about__experience__item-info {
+    width: 100%;
+  }
+  .about__experience__item-image.loc {
+    display: none;
+  }
+  .header__nav ul {
+    gap: 10px;
+  }
+  .header__nav__item {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .header__logo-image {
+    margin-right: 10px;
+  }
+  .header__wrapper, .home__wrapper, .footer__wraper, .about__wrapper {
+    width: 95%;
+  }
+  .footer__nav, .footer__decor-line {
+    display: none;
+  }
+  .footer__contacts-social {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
   
-
 @media screen and (max-width: 480px) {
-  
+  .header__nav {
+    display: none;
+  }
+  .header__burger-menu {
+    display: flex;
+  }
+  .home__photo img {
+    width: 200px;
+    height: 200px;
+  }
+  .home__greeting {
+    font-size: 38px;
+    font-weight: 500;
+  }
+  .footer__phone-email, .about__experience__item, .about__experience__item-info {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+  .about__me__title, .about__education__title, .about__experience__title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .home {
+    margin-top: 50px;
+  }
+  .about {
+    margin-top: 300px;
+  }
+  .about__experience__item-pos {
+    text-align: center;
+  }
 }
